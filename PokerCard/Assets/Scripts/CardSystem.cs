@@ -126,6 +126,7 @@ public class CardSystem : MonoBehaviour
         // select 選取 card
         var sort = from card in cards
                    where card.name.Contains(type[3]) || card.name.Contains(type[2]) || card.name.Contains(type[1]) || card.name.Contains(type[0])
+                   //orderby card ascending
                    select card;
 
         foreach (var item in sort)
